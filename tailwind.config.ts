@@ -10,14 +10,10 @@ const config: Config = {
     colors: {
       'background': '#f4f1e8',
       'content': '#9b4819',
-      'text-black': '#000001',
-      'text-grey': '#f4f1e8',
+      'black': '#000001',
+      'grey': '#f4f1e8',
       'border': '#bd8f53'
-    },
-    fontFamily: {
-      'header': 'Radley',
-      'body': 'Carlito'
-    },
+    }
   },
   plugins: [],
 }

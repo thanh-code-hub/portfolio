@@ -1,9 +1,25 @@
-import Image from 'next/image'
+import {Carlito, Radley} from "next/font/google";
+import './home.scss'
+import MyButton from "@/app/components/button/button";
+
+const radley = Radley({
+	weight: '400',
+	subsets: ['latin'],
+})
+
+const carlito = Carlito({
+	weight: '400',
+	subsets: ['latin']
+})
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background">
-
-    </main>
-  )
+	return (
+		<main className="flex min-h-screen flex-col items-center justify-center p-24 bg-background">
+			<div className="flex flex-col flex-item-container justify-center">
+				<h1 className={`${radley.className} text-black`}><i>Hello</i>, <span className="text-content">I am Thanh</span></h1>
+				<p className={`${carlito.className} text-black`}>Code is love, code is live</p>
+			</div>
+			<MyButton/>
+		</main>
+	)
 }
